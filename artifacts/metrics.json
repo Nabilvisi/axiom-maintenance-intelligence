@@ -1,0 +1,1439 @@
+{
+  "version": "axiom-rf-v1",
+  "seed": 42,
+  "source": "https://doi.org/10.24432/C5HS5C",
+  "datasetSha256": "dc6630cd9b1f0f853922fad78a1b6436570d3f1ec863f1dd5c4340ac56bc8a8e",
+  "total": 10000,
+  "failures": 339,
+  "split": {
+    "train": 6000,
+    "calibration": 2000,
+    "test": 2000,
+    "testFailures": 68
+  },
+  "models": [
+    {
+      "name": "Logistic baseline",
+      "auroc": 0.9236428266958958,
+      "averagePrecision": 0.3588962815354684,
+      "brier": 0.02571477432159969
+    },
+    {
+      "name": "Random forest",
+      "auroc": 0.9849972597734746,
+      "averagePrecision": 0.8492040834291069,
+      "brier": 0.00856319693826453
+    }
+  ],
+  "averagePrecision95CI": [
+    0.7582475617453899,
+    0.9245675925216313
+  ],
+  "importance": [
+    {
+      "feature": "Rotational speed",
+      "value": 0.4517634783927965,
+      "std": 0.041227181016092025
+    },
+    {
+      "feature": "Temperature delta",
+      "value": 0.26724390502754025,
+      "std": 0.028301858138821634
+    },
+    {
+      "feature": "Wear \u00d7 torque",
+      "value": 0.1692297608645445,
+      "std": 0.004388424143727569
+    },
+    {
+      "feature": "Mechanical power",
+      "value": 0.15108037150033865,
+      "std": 0.0034492389790196794
+    },
+    {
+      "feature": "Tool wear",
+      "value": 0.05880412109983857,
+      "std": 0.0054405219023183436
+    },
+    {
+      "feature": "Torque",
+      "value": 0.03938289905253458,
+      "std": 0.005363510034002521
+    },
+    {
+      "feature": "Type M",
+      "value": 0.016180082044897137,
+      "std": 0.014269381346731818
+    },
+    {
+      "feature": "Air temperature",
+      "value": 0.002550577125028708,
+      "std": 0.004546531264857195
+    },
+    {
+      "feature": "Type H",
+      "value": 0.00015528852858632814,
+      "std": 0.00023592913873562196
+    },
+    {
+      "feature": "Process temperature",
+      "value": -0.00375252480934376,
+      "std": 0.0021482673902121713
+    }
+  ],
+  "drift": [
+    {
+      "feature": "Air temperature",
+      "psi": 0.0060106248225563035
+    },
+    {
+      "feature": "Process temperature",
+      "psi": 0.0021841499253008306
+    },
+    {
+      "feature": "Rotational speed",
+      "psi": 0.009063902684356823
+    },
+    {
+      "feature": "Torque",
+      "psi": 0.0074890815099704485
+    },
+    {
+      "feature": "Tool wear",
+      "psi": 0.004918458831874688
+    }
+  ],
+  "reliability": [
+    {
+      "predicted": 0.007353376870703513,
+      "observed": 0.00414722654224987,
+      "count": 1929
+    },
+    {
+      "predicted": 0.125,
+      "observed": 0.5,
+      "count": 4
+    },
+    {
+      "predicted": 0.25630072344232824,
+      "observed": 0.5,
+      "count": 6
+    },
+    {
+      "predicted": 0.32704200625299706,
+      "observed": 1.0,
+      "count": 1
+    },
+    {
+      "predicted": 0.7662129562399537,
+      "observed": 1.0,
+      "count": 1
+    },
+    {
+      "predicted": 0.8776545795494218,
+      "observed": 0.8260869565217391,
+      "count": 23
+    },
+    {
+      "predicted": 0.9998242896231962,
+      "observed": 0.9444444444444444,
+      "count": 36
+    }
+  ],
+  "prCurve": [
+    {
+      "recall": 1.0,
+      "precision": 0.034
+    },
+    {
+      "recall": 0.9852941176470589,
+      "precision": 0.15090090090090091
+    },
+    {
+      "recall": 0.9705882352941176,
+      "precision": 0.308411214953271
+    },
+    {
+      "recall": 0.9558823529411765,
+      "precision": 0.40372670807453415
+    },
+    {
+      "recall": 0.9558823529411765,
+      "precision": 0.40625
+    },
+    {
+      "recall": 0.8823529411764706,
+      "precision": 0.8450704225352113
+    },
+    {
+      "recall": 0.8529411764705882,
+      "precision": 0.8656716417910447
+    },
+    {
+      "recall": 0.8235294117647058,
+      "precision": 0.8888888888888888
+    },
+    {
+      "recall": 0.8235294117647058,
+      "precision": 0.9032258064516129
+    },
+    {
+      "recall": 0.8088235294117647,
+      "precision": 0.9016393442622951
+    },
+    {
+      "recall": 0.7941176470588235,
+      "precision": 0.9
+    },
+    {
+      "recall": 0.7794117647058824,
+      "precision": 0.8983050847457628
+    },
+    {
+      "recall": 0.7647058823529411,
+      "precision": 0.896551724137931
+    },
+    {
+      "recall": 0.5,
+      "precision": 0.9444444444444444
+    },
+    {
+      "recall": 0.4852941176470588,
+      "precision": 0.9428571428571428
+    },
+    {
+      "recall": 0.0,
+      "precision": 1.0
+    }
+  ],
+  "rocCurve": [
+    {
+      "fpr": 0.0,
+      "tpr": 0.0
+    },
+    {
+      "fpr": 0.0010351966873706005,
+      "tpr": 0.4852941176470588
+    },
+    {
+      "fpr": 0.0010351966873706005,
+      "tpr": 0.5
+    },
+    {
+      "fpr": 0.003105590062111801,
+      "tpr": 0.7647058823529411
+    },
+    {
+      "fpr": 0.003105590062111801,
+      "tpr": 0.8235294117647058
+    },
+    {
+      "fpr": 0.0036231884057971015,
+      "tpr": 0.8235294117647058
+    },
+    {
+      "fpr": 0.005693581780538302,
+      "tpr": 0.8823529411764706
+    },
+    {
+      "fpr": 0.04917184265010352,
+      "tpr": 0.9558823529411765
+    },
+    {
+      "fpr": 0.049689440993788817,
+      "tpr": 0.9558823529411765
+    },
+    {
+      "fpr": 0.07660455486542443,
+      "tpr": 0.9705882352941176
+    },
+    {
+      "fpr": 0.19513457556935818,
+      "tpr": 0.9852941176470589
+    },
+    {
+      "fpr": 1.0,
+      "tpr": 1.0
+    }
+  ],
+  "policies": [
+    {
+      "threshold": 0.005,
+      "tp": 66,
+      "fp": 148,
+      "tn": 1784,
+      "fn": 2,
+      "inspections": 214,
+      "precision": 0.308411214953271,
+      "recall": 0.9705882352941176,
+      "cost": 56100
+    },
+    {
+      "threshold": 0.01,
+      "tp": 66,
+      "fp": 148,
+      "tn": 1784,
+      "fn": 2,
+      "inspections": 214,
+      "precision": 0.308411214953271,
+      "recall": 0.9705882352941176,
+      "cost": 56100
+    },
+    {
+      "threshold": 0.02,
+      "tp": 65,
+      "fp": 96,
+      "tn": 1836,
+      "fn": 3,
+      "inspections": 161,
+      "precision": 0.40372670807453415,
+      "recall": 0.9558823529411765,
+      "cost": 60150
+    },
+    {
+      "threshold": 0.03,
+      "tp": 65,
+      "fp": 96,
+      "tn": 1836,
+      "fn": 3,
+      "inspections": 161,
+      "precision": 0.40372670807453415,
+      "recall": 0.9558823529411765,
+      "cost": 60150
+    },
+    {
+      "threshold": 0.04,
+      "tp": 65,
+      "fp": 96,
+      "tn": 1836,
+      "fn": 3,
+      "inspections": 161,
+      "precision": 0.40372670807453415,
+      "recall": 0.9558823529411765,
+      "cost": 60150
+    },
+    {
+      "threshold": 0.05,
+      "tp": 65,
+      "fp": 96,
+      "tn": 1836,
+      "fn": 3,
+      "inspections": 161,
+      "precision": 0.40372670807453415,
+      "recall": 0.9558823529411765,
+      "cost": 60150
+    },
+    {
+      "threshold": 0.06,
+      "tp": 65,
+      "fp": 96,
+      "tn": 1836,
+      "fn": 3,
+      "inspections": 161,
+      "precision": 0.40372670807453415,
+      "recall": 0.9558823529411765,
+      "cost": 60150
+    },
+    {
+      "threshold": 0.07,
+      "tp": 65,
+      "fp": 95,
+      "tn": 1837,
+      "fn": 3,
+      "inspections": 160,
+      "precision": 0.40625,
+      "recall": 0.9558823529411765,
+      "cost": 60000
+    },
+    {
+      "threshold": 0.08,
+      "tp": 65,
+      "fp": 95,
+      "tn": 1837,
+      "fn": 3,
+      "inspections": 160,
+      "precision": 0.40625,
+      "recall": 0.9558823529411765,
+      "cost": 60000
+    },
+    {
+      "threshold": 0.09000000000000001,
+      "tp": 65,
+      "fp": 95,
+      "tn": 1837,
+      "fn": 3,
+      "inspections": 160,
+      "precision": 0.40625,
+      "recall": 0.9558823529411765,
+      "cost": 60000
+    },
+    {
+      "threshold": 0.1,
+      "tp": 60,
+      "fp": 11,
+      "tn": 1921,
+      "fn": 8,
+      "inspections": 71,
+      "precision": 0.8450704225352113,
+      "recall": 0.8823529411764706,
+      "cost": 106650
+    },
+    {
+      "threshold": 0.11,
+      "tp": 60,
+      "fp": 11,
+      "tn": 1921,
+      "fn": 8,
+      "inspections": 71,
+      "precision": 0.8450704225352113,
+      "recall": 0.8823529411764706,
+      "cost": 106650
+    },
+    {
+      "threshold": 0.12000000000000001,
+      "tp": 60,
+      "fp": 11,
+      "tn": 1921,
+      "fn": 8,
+      "inspections": 71,
+      "precision": 0.8450704225352113,
+      "recall": 0.8823529411764706,
+      "cost": 106650
+    },
+    {
+      "threshold": 0.13,
+      "tp": 58,
+      "fp": 9,
+      "tn": 1923,
+      "fn": 10,
+      "inspections": 67,
+      "precision": 0.8656716417910447,
+      "recall": 0.8529411764705882,
+      "cost": 130050
+    },
+    {
+      "threshold": 0.13999999999999999,
+      "tp": 58,
+      "fp": 9,
+      "tn": 1923,
+      "fn": 10,
+      "inspections": 67,
+      "precision": 0.8656716417910447,
+      "recall": 0.8529411764705882,
+      "cost": 130050
+    },
+    {
+      "threshold": 0.15,
+      "tp": 58,
+      "fp": 9,
+      "tn": 1923,
+      "fn": 10,
+      "inspections": 67,
+      "precision": 0.8656716417910447,
+      "recall": 0.8529411764705882,
+      "cost": 130050
+    },
+    {
+      "threshold": 0.16,
+      "tp": 58,
+      "fp": 9,
+      "tn": 1923,
+      "fn": 10,
+      "inspections": 67,
+      "precision": 0.8656716417910447,
+      "recall": 0.8529411764705882,
+      "cost": 130050
+    },
+    {
+      "threshold": 0.16999999999999998,
+      "tp": 58,
+      "fp": 9,
+      "tn": 1923,
+      "fn": 10,
+      "inspections": 67,
+      "precision": 0.8656716417910447,
+      "recall": 0.8529411764705882,
+      "cost": 130050
+    },
+    {
+      "threshold": 0.18,
+      "tp": 58,
+      "fp": 9,
+      "tn": 1923,
+      "fn": 10,
+      "inspections": 67,
+      "precision": 0.8656716417910447,
+      "recall": 0.8529411764705882,
+      "cost": 130050
+    },
+    {
+      "threshold": 0.19,
+      "tp": 58,
+      "fp": 9,
+      "tn": 1923,
+      "fn": 10,
+      "inspections": 67,
+      "precision": 0.8656716417910447,
+      "recall": 0.8529411764705882,
+      "cost": 130050
+    },
+    {
+      "threshold": 0.19999999999999998,
+      "tp": 58,
+      "fp": 9,
+      "tn": 1923,
+      "fn": 10,
+      "inspections": 67,
+      "precision": 0.8656716417910447,
+      "recall": 0.8529411764705882,
+      "cost": 130050
+    },
+    {
+      "threshold": 0.21,
+      "tp": 58,
+      "fp": 9,
+      "tn": 1923,
+      "fn": 10,
+      "inspections": 67,
+      "precision": 0.8656716417910447,
+      "recall": 0.8529411764705882,
+      "cost": 130050
+    },
+    {
+      "threshold": 0.22,
+      "tp": 58,
+      "fp": 9,
+      "tn": 1923,
+      "fn": 10,
+      "inspections": 67,
+      "precision": 0.8656716417910447,
+      "recall": 0.8529411764705882,
+      "cost": 130050
+    },
+    {
+      "threshold": 0.22999999999999998,
+      "tp": 58,
+      "fp": 9,
+      "tn": 1923,
+      "fn": 10,
+      "inspections": 67,
+      "precision": 0.8656716417910447,
+      "recall": 0.8529411764705882,
+      "cost": 130050
+    },
+    {
+      "threshold": 0.24,
+      "tp": 58,
+      "fp": 9,
+      "tn": 1923,
+      "fn": 10,
+      "inspections": 67,
+      "precision": 0.8656716417910447,
+      "recall": 0.8529411764705882,
+      "cost": 130050
+    },
+    {
+      "threshold": 0.25,
+      "tp": 58,
+      "fp": 9,
+      "tn": 1923,
+      "fn": 10,
+      "inspections": 67,
+      "precision": 0.8656716417910447,
+      "recall": 0.8529411764705882,
+      "cost": 130050
+    },
+    {
+      "threshold": 0.26,
+      "tp": 56,
+      "fp": 7,
+      "tn": 1925,
+      "fn": 12,
+      "inspections": 63,
+      "precision": 0.8888888888888888,
+      "recall": 0.8235294117647058,
+      "cost": 153450
+    },
+    {
+      "threshold": 0.27,
+      "tp": 56,
+      "fp": 6,
+      "tn": 1926,
+      "fn": 12,
+      "inspections": 62,
+      "precision": 0.9032258064516129,
+      "recall": 0.8235294117647058,
+      "cost": 153300
+    },
+    {
+      "threshold": 0.28,
+      "tp": 55,
+      "fp": 6,
+      "tn": 1926,
+      "fn": 13,
+      "inspections": 61,
+      "precision": 0.9016393442622951,
+      "recall": 0.8088235294117647,
+      "cost": 165150
+    },
+    {
+      "threshold": 0.29000000000000004,
+      "tp": 55,
+      "fp": 6,
+      "tn": 1926,
+      "fn": 13,
+      "inspections": 61,
+      "precision": 0.9016393442622951,
+      "recall": 0.8088235294117647,
+      "cost": 165150
+    },
+    {
+      "threshold": 0.30000000000000004,
+      "tp": 55,
+      "fp": 6,
+      "tn": 1926,
+      "fn": 13,
+      "inspections": 61,
+      "precision": 0.9016393442622951,
+      "recall": 0.8088235294117647,
+      "cost": 165150
+    },
+    {
+      "threshold": 0.31,
+      "tp": 55,
+      "fp": 6,
+      "tn": 1926,
+      "fn": 13,
+      "inspections": 61,
+      "precision": 0.9016393442622951,
+      "recall": 0.8088235294117647,
+      "cost": 165150
+    },
+    {
+      "threshold": 0.32,
+      "tp": 55,
+      "fp": 6,
+      "tn": 1926,
+      "fn": 13,
+      "inspections": 61,
+      "precision": 0.9016393442622951,
+      "recall": 0.8088235294117647,
+      "cost": 165150
+    },
+    {
+      "threshold": 0.33,
+      "tp": 54,
+      "fp": 6,
+      "tn": 1926,
+      "fn": 14,
+      "inspections": 60,
+      "precision": 0.9,
+      "recall": 0.7941176470588235,
+      "cost": 177000
+    },
+    {
+      "threshold": 0.34,
+      "tp": 54,
+      "fp": 6,
+      "tn": 1926,
+      "fn": 14,
+      "inspections": 60,
+      "precision": 0.9,
+      "recall": 0.7941176470588235,
+      "cost": 177000
+    },
+    {
+      "threshold": 0.35000000000000003,
+      "tp": 54,
+      "fp": 6,
+      "tn": 1926,
+      "fn": 14,
+      "inspections": 60,
+      "precision": 0.9,
+      "recall": 0.7941176470588235,
+      "cost": 177000
+    },
+    {
+      "threshold": 0.36000000000000004,
+      "tp": 54,
+      "fp": 6,
+      "tn": 1926,
+      "fn": 14,
+      "inspections": 60,
+      "precision": 0.9,
+      "recall": 0.7941176470588235,
+      "cost": 177000
+    },
+    {
+      "threshold": 0.37000000000000005,
+      "tp": 54,
+      "fp": 6,
+      "tn": 1926,
+      "fn": 14,
+      "inspections": 60,
+      "precision": 0.9,
+      "recall": 0.7941176470588235,
+      "cost": 177000
+    },
+    {
+      "threshold": 0.38,
+      "tp": 54,
+      "fp": 6,
+      "tn": 1926,
+      "fn": 14,
+      "inspections": 60,
+      "precision": 0.9,
+      "recall": 0.7941176470588235,
+      "cost": 177000
+    },
+    {
+      "threshold": 0.39,
+      "tp": 54,
+      "fp": 6,
+      "tn": 1926,
+      "fn": 14,
+      "inspections": 60,
+      "precision": 0.9,
+      "recall": 0.7941176470588235,
+      "cost": 177000
+    },
+    {
+      "threshold": 0.4,
+      "tp": 54,
+      "fp": 6,
+      "tn": 1926,
+      "fn": 14,
+      "inspections": 60,
+      "precision": 0.9,
+      "recall": 0.7941176470588235,
+      "cost": 177000
+    },
+    {
+      "threshold": 0.41000000000000003,
+      "tp": 54,
+      "fp": 6,
+      "tn": 1926,
+      "fn": 14,
+      "inspections": 60,
+      "precision": 0.9,
+      "recall": 0.7941176470588235,
+      "cost": 177000
+    },
+    {
+      "threshold": 0.42000000000000004,
+      "tp": 54,
+      "fp": 6,
+      "tn": 1926,
+      "fn": 14,
+      "inspections": 60,
+      "precision": 0.9,
+      "recall": 0.7941176470588235,
+      "cost": 177000
+    },
+    {
+      "threshold": 0.43000000000000005,
+      "tp": 54,
+      "fp": 6,
+      "tn": 1926,
+      "fn": 14,
+      "inspections": 60,
+      "precision": 0.9,
+      "recall": 0.7941176470588235,
+      "cost": 177000
+    },
+    {
+      "threshold": 0.44,
+      "tp": 54,
+      "fp": 6,
+      "tn": 1926,
+      "fn": 14,
+      "inspections": 60,
+      "precision": 0.9,
+      "recall": 0.7941176470588235,
+      "cost": 177000
+    },
+    {
+      "threshold": 0.45,
+      "tp": 54,
+      "fp": 6,
+      "tn": 1926,
+      "fn": 14,
+      "inspections": 60,
+      "precision": 0.9,
+      "recall": 0.7941176470588235,
+      "cost": 177000
+    },
+    {
+      "threshold": 0.46,
+      "tp": 54,
+      "fp": 6,
+      "tn": 1926,
+      "fn": 14,
+      "inspections": 60,
+      "precision": 0.9,
+      "recall": 0.7941176470588235,
+      "cost": 177000
+    },
+    {
+      "threshold": 0.47000000000000003,
+      "tp": 54,
+      "fp": 6,
+      "tn": 1926,
+      "fn": 14,
+      "inspections": 60,
+      "precision": 0.9,
+      "recall": 0.7941176470588235,
+      "cost": 177000
+    },
+    {
+      "threshold": 0.48000000000000004,
+      "tp": 54,
+      "fp": 6,
+      "tn": 1926,
+      "fn": 14,
+      "inspections": 60,
+      "precision": 0.9,
+      "recall": 0.7941176470588235,
+      "cost": 177000
+    },
+    {
+      "threshold": 0.49000000000000005,
+      "tp": 54,
+      "fp": 6,
+      "tn": 1926,
+      "fn": 14,
+      "inspections": 60,
+      "precision": 0.9,
+      "recall": 0.7941176470588235,
+      "cost": 177000
+    },
+    {
+      "threshold": 0.5,
+      "tp": 54,
+      "fp": 6,
+      "tn": 1926,
+      "fn": 14,
+      "inspections": 60,
+      "precision": 0.9,
+      "recall": 0.7941176470588235,
+      "cost": 177000
+    },
+    {
+      "threshold": 0.51,
+      "tp": 54,
+      "fp": 6,
+      "tn": 1926,
+      "fn": 14,
+      "inspections": 60,
+      "precision": 0.9,
+      "recall": 0.7941176470588235,
+      "cost": 177000
+    },
+    {
+      "threshold": 0.52,
+      "tp": 54,
+      "fp": 6,
+      "tn": 1926,
+      "fn": 14,
+      "inspections": 60,
+      "precision": 0.9,
+      "recall": 0.7941176470588235,
+      "cost": 177000
+    },
+    {
+      "threshold": 0.53,
+      "tp": 54,
+      "fp": 6,
+      "tn": 1926,
+      "fn": 14,
+      "inspections": 60,
+      "precision": 0.9,
+      "recall": 0.7941176470588235,
+      "cost": 177000
+    },
+    {
+      "threshold": 0.54,
+      "tp": 54,
+      "fp": 6,
+      "tn": 1926,
+      "fn": 14,
+      "inspections": 60,
+      "precision": 0.9,
+      "recall": 0.7941176470588235,
+      "cost": 177000
+    },
+    {
+      "threshold": 0.55,
+      "tp": 54,
+      "fp": 6,
+      "tn": 1926,
+      "fn": 14,
+      "inspections": 60,
+      "precision": 0.9,
+      "recall": 0.7941176470588235,
+      "cost": 177000
+    },
+    {
+      "threshold": 0.56,
+      "tp": 54,
+      "fp": 6,
+      "tn": 1926,
+      "fn": 14,
+      "inspections": 60,
+      "precision": 0.9,
+      "recall": 0.7941176470588235,
+      "cost": 177000
+    },
+    {
+      "threshold": 0.5700000000000001,
+      "tp": 54,
+      "fp": 6,
+      "tn": 1926,
+      "fn": 14,
+      "inspections": 60,
+      "precision": 0.9,
+      "recall": 0.7941176470588235,
+      "cost": 177000
+    },
+    {
+      "threshold": 0.5800000000000001,
+      "tp": 54,
+      "fp": 6,
+      "tn": 1926,
+      "fn": 14,
+      "inspections": 60,
+      "precision": 0.9,
+      "recall": 0.7941176470588235,
+      "cost": 177000
+    },
+    {
+      "threshold": 0.5900000000000001,
+      "tp": 54,
+      "fp": 6,
+      "tn": 1926,
+      "fn": 14,
+      "inspections": 60,
+      "precision": 0.9,
+      "recall": 0.7941176470588235,
+      "cost": 177000
+    },
+    {
+      "threshold": 0.6,
+      "tp": 54,
+      "fp": 6,
+      "tn": 1926,
+      "fn": 14,
+      "inspections": 60,
+      "precision": 0.9,
+      "recall": 0.7941176470588235,
+      "cost": 177000
+    },
+    {
+      "threshold": 0.61,
+      "tp": 54,
+      "fp": 6,
+      "tn": 1926,
+      "fn": 14,
+      "inspections": 60,
+      "precision": 0.9,
+      "recall": 0.7941176470588235,
+      "cost": 177000
+    },
+    {
+      "threshold": 0.62,
+      "tp": 54,
+      "fp": 6,
+      "tn": 1926,
+      "fn": 14,
+      "inspections": 60,
+      "precision": 0.9,
+      "recall": 0.7941176470588235,
+      "cost": 177000
+    },
+    {
+      "threshold": 0.63,
+      "tp": 54,
+      "fp": 6,
+      "tn": 1926,
+      "fn": 14,
+      "inspections": 60,
+      "precision": 0.9,
+      "recall": 0.7941176470588235,
+      "cost": 177000
+    },
+    {
+      "threshold": 0.64,
+      "tp": 54,
+      "fp": 6,
+      "tn": 1926,
+      "fn": 14,
+      "inspections": 60,
+      "precision": 0.9,
+      "recall": 0.7941176470588235,
+      "cost": 177000
+    },
+    {
+      "threshold": 0.65,
+      "tp": 54,
+      "fp": 6,
+      "tn": 1926,
+      "fn": 14,
+      "inspections": 60,
+      "precision": 0.9,
+      "recall": 0.7941176470588235,
+      "cost": 177000
+    },
+    {
+      "threshold": 0.66,
+      "tp": 54,
+      "fp": 6,
+      "tn": 1926,
+      "fn": 14,
+      "inspections": 60,
+      "precision": 0.9,
+      "recall": 0.7941176470588235,
+      "cost": 177000
+    },
+    {
+      "threshold": 0.67,
+      "tp": 54,
+      "fp": 6,
+      "tn": 1926,
+      "fn": 14,
+      "inspections": 60,
+      "precision": 0.9,
+      "recall": 0.7941176470588235,
+      "cost": 177000
+    },
+    {
+      "threshold": 0.68,
+      "tp": 54,
+      "fp": 6,
+      "tn": 1926,
+      "fn": 14,
+      "inspections": 60,
+      "precision": 0.9,
+      "recall": 0.7941176470588235,
+      "cost": 177000
+    },
+    {
+      "threshold": 0.6900000000000001,
+      "tp": 54,
+      "fp": 6,
+      "tn": 1926,
+      "fn": 14,
+      "inspections": 60,
+      "precision": 0.9,
+      "recall": 0.7941176470588235,
+      "cost": 177000
+    },
+    {
+      "threshold": 0.7000000000000001,
+      "tp": 54,
+      "fp": 6,
+      "tn": 1926,
+      "fn": 14,
+      "inspections": 60,
+      "precision": 0.9,
+      "recall": 0.7941176470588235,
+      "cost": 177000
+    },
+    {
+      "threshold": 0.7100000000000001,
+      "tp": 54,
+      "fp": 6,
+      "tn": 1926,
+      "fn": 14,
+      "inspections": 60,
+      "precision": 0.9,
+      "recall": 0.7941176470588235,
+      "cost": 177000
+    },
+    {
+      "threshold": 0.7200000000000001,
+      "tp": 54,
+      "fp": 6,
+      "tn": 1926,
+      "fn": 14,
+      "inspections": 60,
+      "precision": 0.9,
+      "recall": 0.7941176470588235,
+      "cost": 177000
+    },
+    {
+      "threshold": 0.73,
+      "tp": 54,
+      "fp": 6,
+      "tn": 1926,
+      "fn": 14,
+      "inspections": 60,
+      "precision": 0.9,
+      "recall": 0.7941176470588235,
+      "cost": 177000
+    },
+    {
+      "threshold": 0.74,
+      "tp": 54,
+      "fp": 6,
+      "tn": 1926,
+      "fn": 14,
+      "inspections": 60,
+      "precision": 0.9,
+      "recall": 0.7941176470588235,
+      "cost": 177000
+    },
+    {
+      "threshold": 0.75,
+      "tp": 54,
+      "fp": 6,
+      "tn": 1926,
+      "fn": 14,
+      "inspections": 60,
+      "precision": 0.9,
+      "recall": 0.7941176470588235,
+      "cost": 177000
+    },
+    {
+      "threshold": 0.76,
+      "tp": 54,
+      "fp": 6,
+      "tn": 1926,
+      "fn": 14,
+      "inspections": 60,
+      "precision": 0.9,
+      "recall": 0.7941176470588235,
+      "cost": 177000
+    },
+    {
+      "threshold": 0.77,
+      "tp": 53,
+      "fp": 6,
+      "tn": 1926,
+      "fn": 15,
+      "inspections": 59,
+      "precision": 0.8983050847457628,
+      "recall": 0.7794117647058824,
+      "cost": 188850
+    },
+    {
+      "threshold": 0.78,
+      "tp": 53,
+      "fp": 6,
+      "tn": 1926,
+      "fn": 15,
+      "inspections": 59,
+      "precision": 0.8983050847457628,
+      "recall": 0.7794117647058824,
+      "cost": 188850
+    },
+    {
+      "threshold": 0.79,
+      "tp": 53,
+      "fp": 6,
+      "tn": 1926,
+      "fn": 15,
+      "inspections": 59,
+      "precision": 0.8983050847457628,
+      "recall": 0.7794117647058824,
+      "cost": 188850
+    },
+    {
+      "threshold": 0.8,
+      "tp": 53,
+      "fp": 6,
+      "tn": 1926,
+      "fn": 15,
+      "inspections": 59,
+      "precision": 0.8983050847457628,
+      "recall": 0.7794117647058824,
+      "cost": 188850
+    },
+    {
+      "threshold": 0.81,
+      "tp": 53,
+      "fp": 6,
+      "tn": 1926,
+      "fn": 15,
+      "inspections": 59,
+      "precision": 0.8983050847457628,
+      "recall": 0.7794117647058824,
+      "cost": 188850
+    },
+    {
+      "threshold": 0.8200000000000001,
+      "tp": 53,
+      "fp": 6,
+      "tn": 1926,
+      "fn": 15,
+      "inspections": 59,
+      "precision": 0.8983050847457628,
+      "recall": 0.7794117647058824,
+      "cost": 188850
+    },
+    {
+      "threshold": 0.8300000000000001,
+      "tp": 52,
+      "fp": 6,
+      "tn": 1926,
+      "fn": 16,
+      "inspections": 58,
+      "precision": 0.896551724137931,
+      "recall": 0.7647058823529411,
+      "cost": 200700
+    },
+    {
+      "threshold": 0.8400000000000001,
+      "tp": 52,
+      "fp": 6,
+      "tn": 1926,
+      "fn": 16,
+      "inspections": 58,
+      "precision": 0.896551724137931,
+      "recall": 0.7647058823529411,
+      "cost": 200700
+    },
+    {
+      "threshold": 0.8500000000000001,
+      "tp": 52,
+      "fp": 6,
+      "tn": 1926,
+      "fn": 16,
+      "inspections": 58,
+      "precision": 0.896551724137931,
+      "recall": 0.7647058823529411,
+      "cost": 200700
+    },
+    {
+      "threshold": 0.86,
+      "tp": 52,
+      "fp": 6,
+      "tn": 1926,
+      "fn": 16,
+      "inspections": 58,
+      "precision": 0.896551724137931,
+      "recall": 0.7647058823529411,
+      "cost": 200700
+    },
+    {
+      "threshold": 0.87,
+      "tp": 52,
+      "fp": 6,
+      "tn": 1926,
+      "fn": 16,
+      "inspections": 58,
+      "precision": 0.896551724137931,
+      "recall": 0.7647058823529411,
+      "cost": 200700
+    },
+    {
+      "threshold": 0.88,
+      "tp": 52,
+      "fp": 6,
+      "tn": 1926,
+      "fn": 16,
+      "inspections": 58,
+      "precision": 0.896551724137931,
+      "recall": 0.7647058823529411,
+      "cost": 200700
+    },
+    {
+      "threshold": 0.89,
+      "tp": 34,
+      "fp": 2,
+      "tn": 1930,
+      "fn": 34,
+      "inspections": 36,
+      "precision": 0.9444444444444444,
+      "recall": 0.5,
+      "cost": 413400
+    },
+    {
+      "threshold": 0.9,
+      "tp": 34,
+      "fp": 2,
+      "tn": 1930,
+      "fn": 34,
+      "inspections": 36,
+      "precision": 0.9444444444444444,
+      "recall": 0.5,
+      "cost": 413400
+    },
+    {
+      "threshold": 0.91,
+      "tp": 34,
+      "fp": 2,
+      "tn": 1930,
+      "fn": 34,
+      "inspections": 36,
+      "precision": 0.9444444444444444,
+      "recall": 0.5,
+      "cost": 413400
+    },
+    {
+      "threshold": 0.92,
+      "tp": 34,
+      "fp": 2,
+      "tn": 1930,
+      "fn": 34,
+      "inspections": 36,
+      "precision": 0.9444444444444444,
+      "recall": 0.5,
+      "cost": 413400
+    },
+    {
+      "threshold": 0.93,
+      "tp": 34,
+      "fp": 2,
+      "tn": 1930,
+      "fn": 34,
+      "inspections": 36,
+      "precision": 0.9444444444444444,
+      "recall": 0.5,
+      "cost": 413400
+    },
+    {
+      "threshold": 0.9400000000000001,
+      "tp": 34,
+      "fp": 2,
+      "tn": 1930,
+      "fn": 34,
+      "inspections": 36,
+      "precision": 0.9444444444444444,
+      "recall": 0.5,
+      "cost": 413400
+    },
+    {
+      "threshold": 0.9500000000000001,
+      "tp": 34,
+      "fp": 2,
+      "tn": 1930,
+      "fn": 34,
+      "inspections": 36,
+      "precision": 0.9444444444444444,
+      "recall": 0.5,
+      "cost": 413400
+    },
+    {
+      "threshold": 0.9600000000000001,
+      "tp": 34,
+      "fp": 2,
+      "tn": 1930,
+      "fn": 34,
+      "inspections": 36,
+      "precision": 0.9444444444444444,
+      "recall": 0.5,
+      "cost": 413400
+    },
+    {
+      "threshold": 0.9700000000000001,
+      "tp": 34,
+      "fp": 2,
+      "tn": 1930,
+      "fn": 34,
+      "inspections": 36,
+      "precision": 0.9444444444444444,
+      "recall": 0.5,
+      "cost": 413400
+    },
+    {
+      "threshold": 0.98,
+      "tp": 34,
+      "fp": 2,
+      "tn": 1930,
+      "fn": 34,
+      "inspections": 36,
+      "precision": 0.9444444444444444,
+      "recall": 0.5,
+      "cost": 413400
+    },
+    {
+      "threshold": 0.99,
+      "tp": 34,
+      "fp": 2,
+      "tn": 1930,
+      "fn": 34,
+      "inspections": 36,
+      "precision": 0.9444444444444444,
+      "recall": 0.5,
+      "cost": 413400
+    },
+    {
+      "threshold": 1.0,
+      "tp": 33,
+      "fp": 2,
+      "tn": 1930,
+      "fn": 35,
+      "inspections": 35,
+      "precision": 0.9428571428571428,
+      "recall": 0.4852941176470588,
+      "cost": 425250
+    }
+  ],
+  "recommendedThreshold": 0.005,
+  "validation": {
+    "missing": 0,
+    "duplicateIds": 0,
+    "excluded": [
+      "UDI",
+      "Product ID",
+      "TWF",
+      "HDF",
+      "PWF",
+      "OSF",
+      "RNF"
+    ],
+    "splitMethod": "stratified random; exploratory benchmark, no prospective claim"
+  },
+  "environment": {
+    "python": "3.12.14",
+    "sklearn": "1.8.0",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3"
+  },
+  "slices": [
+    {
+      "type": "L",
+      "n": 1179,
+      "failures": 41,
+      "averagePrecision": 0.8943056416825989,
+      "recall": 1.0,
+      "tp": 41,
+      "fp": 79,
+      "tn": 1059,
+      "fn": 0,
+      "inspections": 120
+    },
+    {
+      "type": "M",
+      "n": 623,
+      "failures": 24,
+      "averagePrecision": 0.8187557107154699,
+      "recall": 0.9166666666666666,
+      "tp": 22,
+      "fp": 46,
+      "tn": 553,
+      "fn": 2,
+      "inspections": 68
+    },
+    {
+      "type": "H",
+      "n": 198,
+      "failures": 3,
+      "averagePrecision": 0.6095238095238096,
+      "recall": 1.0,
+      "tp": 3,
+      "fp": 23,
+      "tn": 172,
+      "fn": 0,
+      "inspections": 26
+    }
+  ],
+  "orderedStressTest": {
+    "averagePrecision": 0.7005964421363842,
+    "auroc": 0.9199453444736463,
+    "brier": 0.007610789413768049,
+    "testFailures": 39,
+    "testN": 2000,
+    "note": "Contiguous UDI split is a row-order proxy only. No timestamps or persistent equipment identities are available."
+  }
+}
