@@ -70,5 +70,6 @@ This checkout uses Next.js on Vercel. Source: https://github.com/Nabilvisi/axiom
 
 ## Production boundary
 
-This is a functional portfolio benchmark, not production-certified equipment software. Real operation requires temporal/grouped validation, forecast definition, operational cost/efficacy measurement, prospective monitoring and security/load review. Browser UI QA has not been completed in the current environment.
+This is a functional portfolio benchmark, not production-certified equipment software. Real operation requires temporal/grouped validation, forecast definition, operational cost/efficacy measurement, prospective monitoring and security/load review. Desktop/mobile browser flows and public APIs were checked during the Vercel migration; see docs/VERCEL_RELEASE.md for evidence and limits.
+
 

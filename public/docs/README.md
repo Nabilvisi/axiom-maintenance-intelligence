@@ -25,7 +25,7 @@ Default policy: 214 inspections, 66 captured failures and 2 missed failures out 
 
 ## Full stack
 
-React + TypeScript + accessible Shadcn/Radix controls + Three.js; Vinext/Vite server APIs; portable calibrated-forest inference; Python/scikit-learn training; committed artifacts and a source-data hash. The website does not need a Python runtime or API key. Sessions do not persist policies to a database.
+React + TypeScript + accessible Shadcn/Radix controls + Three.js; Next.js server APIs; portable calibrated-forest inference; Python/scikit-learn training; committed artifacts and a source-data hash. The website does not need a Python runtime or API key. Sessions do not persist policies to a database.
 
 ## Run
 
@@ -66,8 +66,10 @@ Software: MIT. Dataset: AI4I 2020, UCI, CC BY 4.0, DOI https://doi.org/10.24432/
 
 ## GitHub and hosting
 
-The Site has a source repository and a Cloudflare-compatible deployment. GitHub publication is a separate mirror step. A dedicated `axiom-maintenance-intelligence` repository is recommended. The connected GitHub app cannot create repositories; creating a new one requires approved browser access or an existing empty writable target. No unrelated repository is overwritten.
+This checkout uses Next.js on Vercel. Source: https://github.com/Nabilvisi/axiom-maintenance-intelligence. See [Vercel migration](docs/VERCEL_MIGRATION.md) for hosting settings and current verification scope. The original ChatGPT Sites export is preserved separately.
 
 ## Production boundary
 
-This is a functional portfolio benchmark, not production-certified equipment software. Real operation requires temporal/grouped validation, forecast definition, operational cost/efficacy measurement, prospective monitoring and security/load review. Browser UI QA has not been completed in the current environment.
+This is a functional portfolio benchmark, not production-certified equipment software. Real operation requires temporal/grouped validation, forecast definition, operational cost/efficacy measurement, prospective monitoring and security/load review. Desktop/mobile browser flows and public APIs were checked during the Vercel migration; see docs/VERCEL_RELEASE.md for evidence and limits.
+
+

@@ -1,3 +1,5 @@
+> Hosting update (14 October 2026): this checkout runs Next.js on Vercel. See [Vercel migration](VERCEL_MIGRATION.md) and [release verification](VERCEL_RELEASE.md). The original Sites/Cloudflare instructions below are historical.
+
 # Axiom — Full Stack Project Guide
 
 A complete benchmark-to-decision data science product, authored for Nabil Visi Samawi.
@@ -88,3 +90,4 @@ The connected GitHub app can write existing repositories but cannot create a new
 Begin with the business decision, not the algorithm. Show how threshold changes inspection burden and misses. Explain calibration, leakage exclusions and the simpler baseline. Show the ordered-split drop, sparse quality-H subgroup and synthetic limitations. End with the concrete pilot plan needed to validate real value.
 
 The project demonstrates practices associated with experienced data science work; it does not establish that its owner has ten years of professional experience.
+

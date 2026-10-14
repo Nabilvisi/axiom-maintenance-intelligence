@@ -1,3 +1,5 @@
+> Hosting update (14 October 2026): this checkout runs Next.js on Vercel. See [Vercel migration](VERCEL_MIGRATION.md) and [release verification](VERCEL_RELEASE.md). The original Sites/Cloudflare instructions below are historical.
+
 # Axiom — Technical Requirements Document
 
 Version 1.0 · 8 October 2026
@@ -188,3 +190,4 @@ A GitHub mirror is a separate source publication step. The connected GitHub app 
 ## 15. Production evolution
 
 Add dated asset observations, explicit forecast horizon, ingestion checks, event storage, temporal/grouped evaluation, nested model selection, calibration and policy validation separation, alert-capacity optimization, monitoring with delayed labels, incident response, and rollback. These are documented next steps, not implemented features.
+

@@ -1,3 +1,5 @@
+> Hosting update (14 October 2026): this checkout runs Next.js on Vercel. See [Vercel migration](VERCEL_MIGRATION.md) and [release verification](VERCEL_RELEASE.md). The original Sites/Cloudflare instructions below are historical.
+
 # Validation record
 
 Release v1 · 8 October 2026
@@ -34,3 +36,4 @@ pnpm run build
 ```
 
 The separate scripts/smoke-api.mjs supports an explicit AXIOM_TEST_BASE pointing to a reachable local deployment. It checks page, benchmark, health and prediction HTTP responses; do not count it as passed in this release record.
+
